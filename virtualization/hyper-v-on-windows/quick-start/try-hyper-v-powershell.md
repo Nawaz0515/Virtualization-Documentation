@@ -29,7 +29,7 @@ Get-Command -Module hyper-v | Out-GridView
 3. To learn more about a particular PowerShell command use `Get-Help`. For instance running the following command returns information about the `Get-VM` Hyper-V command.
 
   ```powershell
-  Get-Help Get-VM
+  Get-Help Get-AzVM
   ```
  The output shows you how to structure the command, what the required and optional parameters are, and the aliases that you can use.
 
@@ -38,12 +38,12 @@ Get-Command -Module hyper-v | Out-GridView
 
 ### Return a list of virtual machines
 
-Use the `Get-VM` command to return a list of virtual machines.
+Use the `Get-AzVM` command to return a list of virtual machines.
 
 1. In PowerShell, run the following command:
  
  ```powershell
- Get-VM
+ Get-AzVM
  ```
  This displays something like this:
 
@@ -65,7 +65,7 @@ Use the `Get-VM` command to return a list of virtual machines.
 1. To start a particular virtual machine, run the following command with name of the virtual machine:
 
  ```powershell
- Start-VM -Name <virtual machine name>
+ Start-AzVM -Name <virtual machine name>
  ```
 
 2. To start all currently powered off virtual machines, get a list of those machines and pipe the list to the `Start-VM` command:
